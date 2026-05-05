@@ -1,41 +1,52 @@
-# 🛠️ Coder Buddy
+# 🚀 AgentForge
 
-**Coder Buddy** is an AI-powered coding assistant built with [LangGraph](https://github.com/langchain-ai/langgraph).  
-It works like a multi-agent development team that can take a natural language request and transform it into a complete, working project — file by file — using real developer workflows.
+**AgentForge** is an AI-powered multi-agent system that generates complete Python projects from natural language prompts.
 
----
-
-## 🏗️ Architecture
-
-- **Planner Agent** – Analyzes your request and generates a detailed project plan.
-- **Architect Agent** – Breaks down the plan into specific engineering tasks with explicit context for each file.
-- **Coder Agent** – Implements each task, writes directly into files, and uses available tools like a real developer.
-
-<div style="text-align: center;">
-    <img src="resources/coder_buddy_diagram.png" alt="Coder Agent Architecture" width="90%"/>
-</div>
+It simulates a real software development workflow using three intelligent agents:
+👉 Planner → Architect → Coder
 
 ---
 
-## 🚀 Getting Started
-### Prerequisites
-- Make sure you have uv installed, follow the instructions [here](https://docs.astral.sh/uv/getting-started/installation/) to install it.
-- Ensure that you have created a groq account and have your API key ready. Create an API key [here](https://console.groq.com/keys).
+## 🧠 How It Works
 
-### ⚙️ **Instsllstion and Startup**
-- Create a virtual environment using: `uv venv` and activate it using `source .venv/bin/activate`
-- Install the dependencies using: `uv pip install -r pyproject.toml`
-- Create a `.env` file and add the variables and their respective values mentioned in the `.sample_env` file
+### 🔹 Planner Agent
+- Understands your prompt
+- Generates a structured project plan
 
-Now that we are done with all the set-up & installation steps we can start the application using the following command:
-  ```bash
-    python main.py
-  ```
+### 🔹 Architect Agent
+- Breaks the plan into step-by-step implementation tasks
+- Defines files, logic, and dependencies
 
-### 🧪 Example Prompts
-- Create a to-do list application using html, css, and javascript.
-- Create a simple calculator web application.
-- Create a simple blog API in FastAPI with a SQLite database.
+### 🔹 Coder Agent
+- Writes complete Python code for each file
+- Ensures clean structure and working implementation
 
 ---
-Copyright©️ Codebasics Inc. All rights reserved.
+
+## ⚙️ Features
+
+- 🔥 Generate full Python projects from text
+- 🧠 Multi-agent architecture (LangChain + LLM)
+- 📂 Automatic file creation
+- 🧩 Modular and extensible design
+- 🚀 Ready for CLI & Streamlit UI
+
+---
+
+## 🛠️ Tech Stack
+
+- Python 3.11+
+- LangChain / LangGraph
+- Groq LLM (LLaMA 3)
+- Streamlit (UI)
+- dotenv
+
+-----
+
+## Example Prompts
+
+- Create a Python CLI calculator with add, subtract, multiply, divide
+
+- Create a todo app with file storage
+
+- Create a FastAPI app with CRUD operations
