@@ -48,7 +48,9 @@ Google Cloud Run
 
 ## 🧪 Example Prompts
 Create a Python calculator with add, subtract, multiply, divide
+
 Create a CLI todo app with file storage
+
 Create a FastAPI CRUD API for blog
 Docker
 Google Cloud Run
