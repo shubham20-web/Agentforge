@@ -8,45 +8,47 @@ It simulates a real software development workflow using three intelligent agents
 ---
 
 ## 🧠 How It Works
+🔹 Planner Agent
+Understands user prompt
+Generates structured project plan
+🔹 Architect Agent
+Breaks plan into detailed implementation steps
+Defines files, logic, and dependencies
+🔹 Coder Agent
+Writes clean Python code for each file
+Generates complete working project
 
-### 🔹 Planner Agent
-- Understands your prompt
-- Generates a structured project plan
-
-### 🔹 Architect Agent
-- Breaks the plan into step-by-step implementation tasks
-- Defines files, logic, and dependencies
-
-### 🔹 Coder Agent
-- Writes complete Python code for each file
-- Ensures clean structure and working implementation
-
----
+----
 
 ## ⚙️ Features
+🔥 Multi-agent LLM architecture
+🧠 Automated code generation from text
+📂 Dynamic file creation
+🖥️ Streamlit UI with real-time logs
+🌐 Deployed on Google Cloud Run
+⚡ Scalable cloud-based execution
 
-- 🔥 Generate full Python projects from text
-- 🧠 Multi-agent architecture (LangChain + LLM)
-- 📂 Automatic file creation
-- 🧩 Modular and extensible design
-- 🚀 Ready for CLI & Streamlit UI
+----
+
+## 🛠️ Tech Stack
+Python
+LangChain / LangGraph
+Groq API (LLaMA 3 models)
+Streamlit
+Docker
+Google Cloud Run
+
+----
+
+## 🚀 Live Demo
+
+👉 https://agentforge-139840464325.us-central1.run.app
 
 ---
 
-## 🛠️ Tech Stack
-
-- Python 3.11+
-- LangChain / LangGraph
-- Groq LLM (LLaMA 3)
-- Streamlit (UI)
-- dotenv
-
------
-
-## Example Prompts
-
-- Create a Python CLI calculator with add, subtract, multiply, divide
-
-- Create a todo app with file storage
-
-- Create a FastAPI app with CRUD operations
+## 🧪 Example Prompts
+Create a Python calculator with add, subtract, multiply, divide
+Create a CLI todo app with file storage
+Create a FastAPI CRUD API for blog
+Docker
+Google Cloud Run
